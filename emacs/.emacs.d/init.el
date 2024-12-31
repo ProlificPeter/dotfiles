@@ -48,14 +48,19 @@
 (when (version< emacs-version "25.1")
   (error "[Prelude] Prelude requires GNU Emacs 25.1 or newer, but you're running %s" emacs-version))
 
-(load-theme 'timu-macos t)
+;; (load-theme 'timu-macos t)
 
+;; Uncomment when GPL Keys become issue, then run package-refresh, and install gpl keys
+;; (setq package-check-signature nil)
 
 ;; Always load newest byte code
 (setq load-prefer-newer t)
 
 ;; Disable Arrow Warnings
 (setq prelude-guru nil)
+
+;; Enable Mouse Mode
+(xterm-mouse-mode 1)
 
 ;; Define Prelude's directory structure
 (defvar prelude-dir (file-name-directory load-file-name)
@@ -129,8 +134,8 @@ by Prelude.")
   (require 'prelude-linux))
 
 ;; WSL specific setting
-(when (and (eq system-type 'gnu/linux) (getenv "WSLENV"))
-  (require 'prelude-wsl))
+;;(wHen (And (Eq System-Type 'gnu/linux) (getenv "WSLENV"))
+;;  (require 'prelude-wsl))
 
 ;; Windows specific settings
 (when (eq system-type 'windows-nt)
