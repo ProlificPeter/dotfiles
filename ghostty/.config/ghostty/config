@@ -1,0 +1,19 @@
+# ----- FONTS -----
+font-family = "NotoMono Nerd Font"
+font-size = 18
+
+# ----- THEME -----
+theme = nord
+
+# ----- WINDOW STYLING -----
+window-height = 40
+window-width = 80
+background-opacity = .8
+background-blur-radius = 20
+macos-titlebar-style = hidden
+
+# ----- BEHAVIOR -----
+mouse-hide-while-typing = true
+
+# ----- KEYBINDS -----
+keybind = global:super+`=toggle_quick_terminal
