@@ -13,14 +13,14 @@ TESTIMG = "/Users/rlgranlund/Empty.png"
 -- For example, changing the color scheme:
 config.color_scheme = 'nordfox'
 
-config.font = wezterm.font('SFMono Nerd Font', {weight = 'Bold'})
-config.font_size = 18
+config.font = wezterm.font('NotoSansM Nerd Font', {weight = 'Regular'})
+config.font_size = 14
 config.enable_tab_bar = true
 config.use_fancy_tab_bar = false
 config.hide_tab_bar_if_only_one_tab = true
 config.window_background_image = nil
 config.window_decorations = "RESIZE"
-config.window_background_opacity = 0.4
+config.window_background_opacity = 0.8
 config.macos_window_background_blur = 10
 
 config.inactive_pane_hsb = {
@@ -38,7 +38,7 @@ function handleBackgroundImage(window)
       end
       overrides.window_background_image = nil
       overrides.window_decorations = "TITLE | RESIZE"
-      overrides.window_background_opacity = 0.7
+      overrides.window_background_opacity = 0.8
    else
       overrides.window_background_image = BACKGROUND
       overrides.window_decorations = "RESIZE"
