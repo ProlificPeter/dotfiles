@@ -12,9 +12,10 @@ TESTIMG = "/Users/rlgranlund/Empty.png"
 
 -- For example, changing the color scheme:
 config.color_scheme = 'nordfox'
-
 config.font = wezterm.font('NotoSansM Nerd Font', {weight = 'Regular'})
 config.font_size = 14
+config.initial_cols = 80
+config.initial_rows = 40
 config.enable_tab_bar = true
 config.use_fancy_tab_bar = false
 config.hide_tab_bar_if_only_one_tab = true
